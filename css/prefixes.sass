@@ -1,0 +1,47 @@
+@import "variables"
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+=box-shadow($shadow)
+  -moz-box-shadow: $shadow
+  -webkit-box-shadow: $shadow
+  box-shadow: $shadow
+
+=transform($transform)
+  -moz-transform: $transform
+  -ms-transform: $transform
+  -o-transform: $transform
+  -webkit-transform: $transform
+  transform: $transform
+
+=object-fit($object)
+  -o-object-fit: $object
+  object-fit: $object
+
+//  MIXIN
+@mixin font($color: $textBlack, $family: $regular, $weight: normal, $size: $fontSize, $line: 1)
+  font:
+    size: $size
+    weight: $weight
+    family: $family
+  color: $color
+  line-height: $line
+
+@mixin transition($transition: all 0.4s ease 0s)
+  -moz-transition: $transition
+  -o-transition: $transition
+  -webkit-transition: $transition
+  transition: $transition
+
+@mixin box-sizing($box-sizing: border-box)
+  -moz-box-sizing: $box-sizing
+  -webkit-box-sizing: $box-sizing
+  box-sizing: $box-sizing
+
+@mixin box-shadow($shadow: 0 0 10px rgba(0, 0, 0, 0.17))
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
