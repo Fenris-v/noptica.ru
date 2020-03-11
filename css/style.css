@@ -306,7 +306,30 @@ input[type=email] {
 .header__cart__price {
   opacity: 0.8;
 }
-.header__cart img {
+.header__cart__icon {
+  position: relative;
+}
+.header__cart__icon__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #005e90;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: GothamBold, sans-serif;
+  color: #e30613;
+  line-height: 1;
+  right: 35%;
+  top: 0;
+}
+.header__cart__icon img {
   margin-bottom: 5px;
 }
 .header__user {

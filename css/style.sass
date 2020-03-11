@@ -92,8 +92,26 @@
     &__price
       opacity: 0.8
 
-    img
-      margin-bottom: 5px
+    &__icon
+      position: relative
+
+      &__label
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 15px
+        height: 15px
+        position: absolute
+        background: #ffffff
+        border: 1px solid #005e90
+        +border-radius(50%)
+        @include font(#e30613, $gothamBold, bold, 10px)
+        right: 35%
+        top: 0
+
+      img
+        margin-bottom: 5px
+
 
   &__user
     @include font(#005e90, $gothamBold, bold, 10px)
