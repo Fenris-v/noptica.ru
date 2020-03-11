@@ -11,7 +11,7 @@
 
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
-    <link href="https://noptica.ru/templates/noptica_2.0/css/kk.css?21-02-20" rel="stylesheet">
+    <!--    <link href="https://noptica.ru/templates/noptica_2.0/css/kk.css?21-02-20" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
 
     <link href="#" rel="shortcut icon">
@@ -72,488 +72,483 @@
             </div>
 
             <div class="catalog__container">
-                    <div class="catalog__container__side">
-                        <div class="side-filter">
-                            <div class="side-filter-accordion">
-                                <form method="get" class="form_group">
-                                    <div class="side-filter-accordion__group">
-                                        <a href="#"
-                                           class="side-filter-accordion__trigger js-accordion-trigger side-filter-accordion__trigger--active">Контактные
-                                            линзы:</a>
-                                        <div class="side-filter-accordion__body" style="display: block;">
-                                            <div class="side-filter-accordion-subgroup">
-                                                <div class="side-filter-accordion-subgroup__title">Производитель:</div>
-                                                <div class="side-filter-accordion-subgroup__body">
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[proizvoditel][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Alcon"><span
-                                                            class="side-filter-item__name">Alcon</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[proizvoditel][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Bausch Lomb"><span
-                                                            class="side-filter-item__name">Bausch Lomb</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[proizvoditel][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="CooperVision"><span
-                                                            class="side-filter-item__name">CooperVision</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[proizvoditel][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Johnson Johnson"><span
-                                                            class="side-filter-item__name">Johnson Johnson</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                </div>
-                                            </div>
-                                            <div class="side-filter-accordion-subgroup">
-                                                <div class="side-filter-accordion-subgroup__title">Срок замены:</div>
-                                                <div class="side-filter-accordion-subgroup__body">
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[srok_zameny][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Один день"><span
-                                                            class="side-filter-item__name">Один день</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[srok_zameny][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Две недели"><span
-                                                            class="side-filter-item__name">Две недели</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[srok_zameny][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Две недели при дневном ношении"><span
-                                                            class="side-filter-item__name">Две недели при дневном ношении</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[srok_zameny][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Один месяц"><span
-                                                            class="side-filter-item__name">Один месяц</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[srok_zameny][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="3 месяца"><span
-                                                            class="side-filter-item__name">3 месяца</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                </div>
-                                            </div>
-                                            <div class="side-filter-accordion-subgroup">
-                                                <div class="side-filter-accordion-subgroup__title">Тип линз:</div>
-                                                <div class="side-filter-accordion-subgroup__body">
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_linz][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Прозрачные"><span
-                                                            class="side-filter-item__name">Прозрачные</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_linz][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Мультифокальные"><span
-                                                            class="side-filter-item__name">Мультифокальные</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_linz][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Торические"><span
-                                                            class="side-filter-item__name">Торические</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_linz][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Цветные"><span
-                                                            class="side-filter-item__name">Цветные</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                </div>
-                                            </div>
-                                            <div class="side-filter-apply"><input type="submit"
-                                                                                  class="side-filter-apply__btn"
-                                                                                  value="Применить"></div>
-                                            <div class="side-filter-reset" style="display:none"><input type="button"
-                                                                                                       class="side-filter-reset__btn"
-                                                                                                       value="Сбросить">
+                <div class="catalog__container__side">
+                    <div class="side-filter">
+                        <div class="side-filter-accordion">
+                            <form method="get" class="form_group">
+                                <div class="side-filter-accordion__group">
+                                    <a href="#"
+                                       class="side-filter-accordion__trigger js-accordion-trigger side-filter-accordion__trigger--active">Контактные
+                                        линзы:</a>
+                                    <div class="side-filter-accordion__body" style="display: block;">
+                                        <div class="side-filter-accordion-subgroup">
+                                            <div class="side-filter-accordion-subgroup__title">Производитель:</div>
+                                            <div class="side-filter-accordion-subgroup__body">
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[proizvoditel][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Alcon"><span
+                                                        class="side-filter-item__name">Alcon</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[proizvoditel][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Bausch Lomb"><span
+                                                        class="side-filter-item__name">Bausch Lomb</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[proizvoditel][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="CooperVision"><span
+                                                        class="side-filter-item__name">CooperVision</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[proizvoditel][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Johnson Johnson"><span
+                                                        class="side-filter-item__name">Johnson Johnson</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                                <form method="get" class="form_group">
-                                    <div class="side-filter-accordion__group">
-                                        <a href="#" class="side-filter-accordion__trigger js-accordion-trigger">Уход за
-                                            линзами:</a>
-                                        <div class="side-filter-accordion__body">
-                                            <div class="side-filter-accordion-subgroup">
-                                                <div class="side-filter-accordion-subgroup__title">Тип аксессуара:</div>
-                                                <div class="side-filter-accordion-subgroup__body">
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_aksessuara][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Растворы для линз"><span
-                                                            class="side-filter-item__name">Растворы для линз</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_aksessuara][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Капли для глаз"><span
-                                                            class="side-filter-item__name">Капли для глаз</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                    <div class="side-filter-item"><label
-                                                            class="side-filter-item__checklabel"><input type="checkbox"
-                                                                                                        name="filter[tip_aksessuara][]"
-                                                                                                        class="side-filter-item__checkbox"
-                                                                                                        value="Аксессуары для линз"><span
-                                                            class="side-filter-item__name">Аксессуары для линз</span><span
-                                                            class="side-filter-item__checkmark"></span></label></div>
-                                                </div>
-                                            </div>
-                                            <div class="side-filter-apply"><input type="submit"
-                                                                                  class="side-filter-apply__btn"
-                                                                                  value="Применить"></div>
-                                            <div class="side-filter-reset" style="display:none"><input type="button"
-                                                                                                       class="side-filter-reset__btn"
-                                                                                                       value="Сбросить">
+                                        <div class="side-filter-accordion-subgroup">
+                                            <div class="side-filter-accordion-subgroup__title">Срок замены:</div>
+                                            <div class="side-filter-accordion-subgroup__body">
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[srok_zameny][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Один день"><span
+                                                        class="side-filter-item__name">Один день</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[srok_zameny][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Две недели"><span
+                                                        class="side-filter-item__name">Две недели</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[srok_zameny][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Две недели при дневном ношении"><span
+                                                        class="side-filter-item__name">Две недели при дневном ношении</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[srok_zameny][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Один месяц"><span
+                                                        class="side-filter-item__name">Один месяц</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[srok_zameny][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="3 месяца"><span
+                                                        class="side-filter-item__name">3 месяца</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
                                             </div>
                                         </div>
+                                        <div class="side-filter-accordion-subgroup">
+                                            <div class="side-filter-accordion-subgroup__title">Тип линз:</div>
+                                            <div class="side-filter-accordion-subgroup__body">
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_linz][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Прозрачные"><span
+                                                        class="side-filter-item__name">Прозрачные</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_linz][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Мультифокальные"><span
+                                                        class="side-filter-item__name">Мультифокальные</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_linz][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Торические"><span
+                                                        class="side-filter-item__name">Торические</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_linz][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Цветные"><span
+                                                        class="side-filter-item__name">Цветные</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="side-filter-apply"><input type="submit"
+                                                                              class="side-filter-apply__btn"
+                                                                              value="Применить"></div>
+                                        <div class="side-filter-reset" style="display:none"><input type="button"
+                                                                                                   class="side-filter-reset__btn"
+                                                                                                   value="Сбросить">
+                                        </div>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
+                            <form method="get" class="form_group">
+                                <div class="side-filter-accordion__group">
+                                    <a href="#" class="side-filter-accordion__trigger js-accordion-trigger">Уход за
+                                        линзами:</a>
+                                    <div class="side-filter-accordion__body">
+                                        <div class="side-filter-accordion-subgroup">
+                                            <div class="side-filter-accordion-subgroup__title">Тип аксессуара:</div>
+                                            <div class="side-filter-accordion-subgroup__body">
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_aksessuara][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Растворы для линз"><span
+                                                        class="side-filter-item__name">Растворы для линз</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_aksessuara][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Капли для глаз"><span
+                                                        class="side-filter-item__name">Капли для глаз</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                                <div class="side-filter-item"><label
+                                                        class="side-filter-item__checklabel"><input type="checkbox"
+                                                                                                    name="filter[tip_aksessuara][]"
+                                                                                                    class="side-filter-item__checkbox"
+                                                                                                    value="Аксессуары для линз"><span
+                                                        class="side-filter-item__name">Аксессуары для линз</span><span
+                                                        class="side-filter-item__checkmark"></span></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="side-filter-apply"><input type="submit"
+                                                                              class="side-filter-apply__btn"
+                                                                              value="Применить"></div>
+                                        <div class="side-filter-reset" style="display:none"><input type="button"
+                                                                                                   class="side-filter-reset__btn"
+                                                                                                   value="Сбросить">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="catalog-container__content">
-                        <div class="catalog-sort">
-                            <div class="catalog-sort__item">
-                                <div class="catalog-sort__title">Сортировать:</div>
-                                <select name="sort_field" class="catalog-sort__select">
-                                    <option value="">По умолчанию</option>
-                                    <option value="price" data-ord="asc">
-                                        По цене
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="catalog-sort__basket" style="padding-top: 3px;"><a id="catalog-sort__basketLink"
-                                                                                           href="/emarket/purchasing_one_step/"
-                                                                                           data-count="0"
-                                                                                           style="display:none"><img
-                                    src="/templates/noptica_2.0/img/basket_ico_red.svg"><span>Товаров:
-                0<br>0 руб.</span></a></div>
+                </div>
+                <div class="catalog-container__content">
+                    <div class="catalog-sort">
+                        <div class="catalog-sort__item">
+                            <div class="catalog-sort__title">Сортировать:</div>
+                            <select name="sort_field" class="catalog-sort__select">
+                                <option value="">По умолчанию</option>
+                                <option value="price" data-ord="asc">
+                                    По цене
+                                </option>
+                            </select>
                         </div>
-                        <div class="pw-product-grid">
-                            <div class="pw-product-grid__row">
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"><img
-                                                src="/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="780"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
-                                        <div class="pw-cat-product__price">1760&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">2200&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_90_linz/"><img
-                                                src="/images/cms/thumbs/fd221e5b3e23197710a8e802bf611069629c4480/ACUVUE_OASYS_1-DAY_90_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="781"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_90_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_90_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue Oasys (90 линз)</a></div>
-                                        <div class="pw-cat-product__price">4560&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">5700&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_90_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_30_linz/"><img
-                                                src="/images/cms/thumbs/802530bfba86aa00236c07e4472205bf7a2ef08d/1-DAY_ACUVUE_TruEye_30_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="782"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_30_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_30_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue TruEye (30 линз)</a></div>
-                                        <div class="pw-cat-product__price">1600&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">2000&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_30_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_90_linz/"><img
-                                                src="/images/cms/thumbs/f274a667642cb3e2ba20ffa7de04d1e001633b93/1-DAY_ACUVUE_TruEye_90_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="783"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_90_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_90_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue TruEye (90 линз)</a></div>
-                                        <div class="pw-cat-product__price">4480&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">5600&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_90_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_180_linz/"><img
-                                                src="/images/cms/thumbs/8b7857979d5903ede70dcada7175e4ca202fb605/1-DAY_ACUVUE_TruEye_180_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="784"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_180_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_180_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue TruEye (180 линз)</a>
-                                        </div>
-                                        <div class="pw-cat-product__price">8320&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">10400&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_trueye_180_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_30_linz/"><img
-                                                src="/images/cms/thumbs/76f165a0f95f05b126b5681fef1c9f87d080f6d6/1-DAY_ACUVUE_MOIST_30_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="785"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_30_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_30_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue Moist (30 линз)</a></div>
-                                        <div class="pw-cat-product__price">1440&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">1800&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_30_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_90_linz/"><img
-                                                src="/images/cms/thumbs/7dd72e66a47b1b64cb419d2a512f4d4cc7b456da/1-DAY_ACUVUE_MOIST_90_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="786"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_90_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_90_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue Moist (90 линз)</a></div>
-                                        <div class="pw-cat-product__price">3760&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">4700&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_90_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_180_linz/"><img
-                                                src="/images/cms/thumbs/1907e235b148914dfe9c116c24ecebe931039678/1-DAY_ACUVUE_MOIST_180_front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="787"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_180_linz/"
-                                                class="pw-cat-product__brandlink">Johnson Johnson</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_180_linz/"
-                                                class="pw-cat-product__namelink">1 Day Acuvue Moist (180 линз)</a></div>
-                                        <div class="pw-cat-product__price">7000&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">8750&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_moist_180_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/clariti_1day_30_linz/"><img
-                                                src="/images/cms/thumbs/41c3424ac48cb0a91f526be78af948a329a54011/clariti_1D_Sphere_30pk_Front_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="788"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/clariti_1day_30_linz/"
-                                                class="pw-cat-product__brandlink">CooperVision</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/clariti_1day_30_linz/"
-                                                class="pw-cat-product__namelink">Clariti 1day (30 линз)</a></div>
-                                        <div class="pw-cat-product__price">1520&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">1900&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/clariti_1day_30_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_30_linz/"><img
-                                                src="/images/cms/thumbs/97ac2a07f3d96bb98b912ca9215856cae9d15841/image1_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="790"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_30_linz/"
-                                                class="pw-cat-product__brandlink">Alcon</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_30_linz/"
-                                                class="pw-cat-product__namelink">Dailies Total 1 (30 линз)</a></div>
-                                        <div class="pw-cat-product__price">1920&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">2400&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_30_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_90_linz/"><img
-                                                src="/images/cms/thumbs/f44f358b1db29ff154a56a10263be67a503a513e/image2_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="791"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_90_linz/"
-                                                class="pw-cat-product__brandlink">Alcon</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_90_linz/"
-                                                class="pw-cat-product__namelink">Dailies Total 1 (90 линз)</a></div>
-                                        <div class="pw-cat-product__price">1920&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">2400&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_total_1_90_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                                <div class="pw-product-grid__col">
-                                    <div class="pw-cat-product">
-                                        <div class="pw-cat-product__img">
-                                            <span class="discountLabel__category">-20%</span><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_aquacomfort_plus_30_linz/"><img
-                                                src="/images/cms/thumbs/17de251cb8aee5d9a59fcdf389c29866e22463ca/image10_auto_168_jpg_5_100.jpg"
-                                                width="168" height="168" alt="" umi:element-id="792"
-                                                umi:field-name="izobrazheniya" umi:empty="/images/cms/nofoto.jpg"></a>
-                                        </div>
-                                        <div class="pw-cat-product__brand"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_aquacomfort_plus_30_linz/"
-                                                class="pw-cat-product__brandlink">Alcon</a></div>
-                                        <div class="pw-cat-product__name"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_aquacomfort_plus_30_linz/"
-                                                class="pw-cat-product__namelink">DAILIES AquaComfort Plus (30 линз)</a>
-                                        </div>
-                                        <div class="pw-cat-product__price">1280&nbsp;
-                                            руб<span class="s-product__oldprice s-product__oldprice_category">1600&nbsp;
-				руб</span>
-                                        </div>
-                                        <div class="pw-cat-product__more"><a
-                                                href="/kontaktnye_linzy_i_aksessuary/dailies_aquacomfort_plus_30_linz/"
-                                                class="pw-cat-product__morebtn">Подробнее</a></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="catalog-sort__basket" style="padding-top: 3px;">
+                            <a id="catalog-sort__basketLink" href="/emarket/purchasing_one_step/" data-count="0"
+                               style="display:none">
+                                <img src="/templates/noptica_2.0/img/basket_ico_red.svg">
+                                <span>Товаров:0<br>0 руб.</span>
+                            </a>
                         </div>
                     </div>
+
+                    <div class="catalog__itemsList">
+
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="pw-cat-product__img">
+                                <span class="discountLabel__category">-20%</span>
+                                <a href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/">
+                                    <img src="https://noptica.ru/images/cms/thumbs/7f5f9d3e9b7024431885b640575c0a44dece55ba/ACUVUE_OASYS_1-DAY_30_front_auto_453_jpg_5_100.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="pw-cat-product__brand"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__brandlink">Johnson Johnson</a></div>
+                            <div class="pw-cat-product__name"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__namelink">1 Day Acuvue Oasys (30 линз)</a></div>
+                            <div class="pw-cat-product__price">1760&nbsp;
+                                руб<span
+                                        class="s-product__oldprice s-product__oldprice_category">2200&nbsp;руб</span>
+                            </div>
+                            <div class="pw-cat-product__more"><a
+                                    href="/kontaktnye_linzy_i_aksessuary/1_day_acuvue_oasys_30_linz/"
+                                    class="pw-cat-product__morebtn">Подробнее</a></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pagin-container">
+                    <div class="pagin pagin--right">
+                        <ul>
+                            <li class="pagin__item"><a href="?p=0" class="pagin__link pagin__link--first"></a></li>
+                            <li class="pagin__item"><a href="?p=0" class="pagin__link">1</a></li>
+                            <li class="pagin__item"><a href="?p=1" class="pagin__link pagin__link--active">2</a></li>
+                            <li class="pagin__item"><a href="?p=2" class="pagin__link">3</a></li>
+                            <li class="pagin__item"><a href="?p=3" class="pagin__link">4</a></li>
+                            <li class="pagin__item"><a href="?p=4" class="pagin__link">5</a></li>
+                            <li class="pagin__item"><a href="?p=5" class="pagin__link">6</a></li>
+                            <li class="pagin__item"><a href="?p=2" class="pagin__link pagin__link--last"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -561,39 +556,61 @@
 
 <footer class="footer">
     <div class="wrapper">
-
+        <div class="footer__container">
+            <ul class="social">
+                <li><a class="email" href="/napisat_nam/">
+                    <img src="images/icons/mail.svg" alt="">
+                </a></li>
+                <li><a class="facebook" href="https://www.facebook.com/optisse/" rel="nofollow" target="_blank">
+                    <img src="images/icons/fb.svg" alt="">
+                </a></li>
+                <li><a class="twitter" href="http://vk.com/optisse" rel="nofollow" target="_blank">
+                    <img src="images/icons/vk.svg" alt="">
+                </a></li>
+                <li><a class="inst" href="https://www.instagram.com/noptica.ru/" rel="nofollow" target="_blank">
+                    <img src="images/icons/inst.svg" alt="">
+                </a></li>
+                <li><a class="odk" href="https://ok.ru/group/53535531008092" rel="nofollow" target="_blank">
+                    <img src="images/icons/ok.svg" alt="">
+                </a></li>
+            </ul>
+            <div class="footer__nav">
+                <ul>
+                    <li itemprop="name"><a href="/ochki_detskie/" itemprop="url">Очки для детей</a></li>
+                    <li itemprop="name"><a href="/ochki_zhenskie/" itemprop="url">Очки для женщин</a></li>
+                    <li itemprop="name"><a href="/ochki_muzhskie/" itemprop="url">Очки для мужчин</a></li>
+                </ul>
+                <ul>
+                    <li itemprop="name"><a href="/vse_o_zrenii/" itemprop="url">Статьи </a></li>
+                    <li itemprop="name"><a href="/vakansii/" itemprop="url">Вакансии</a></li>
+                    <li itemprop="name"><a href="/ostorozhno_moshenniki/" itemprop="url">Осторожно – мошенники!</a></li>
+                    <li itemprop="name"><a href="/politika_konfidencial_nosti/" itemprop="url">Политика
+                        конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="contact__contaier" itemscope="" itemtype="http://schema.org/Organization">
+                <div class="contact">
+                    <span itemprop="name" style="display:none;">Невская оптика</span><span itemprop="address"
+                                                                                           itemscope=""
+                                                                                           itemtype="http://schema.org/PostalAddress"><p><span
+                        itemprop="addressLocality">г. Санкт-Петербург</span>, <span itemprop="streetAddress">ул. Ломоносова, 5</span></p></span>
+                    <p><span itemprop="telephone">+7 (812) 310-92-82</span></p>
+                    <p><a href="mailto:info@noptica.ru" style="color: #ACACAC;" itemprop="email">info@noptica.ru</a></p>
+                </div>
+            </div>
+            <div class="copyright__container">
+                <p class="copyright">(ЗАО "Невская Оптика Холдинг" 2020)</p>
+            </div>
+        </div>
     </div>
 </footer>
-
-<!--<div id="callback-modal" class="modal modal-default">-->
-<!--    <div class="modal-default__title">Оставьте заявку и мы перезвоним вам</div>-->
-<!--    <form class="callback-form default-form" id="formZvonok">-->
-<!--        <div class="default-form__group">-->
-<!--            <label>-->
-<!--                <input type="text" name="name" class="default-form__input" placeholder="Введите ваше имя" required>-->
-<!--            </label>-->
-<!--        </div>-->
-<!--        <div class="default-form__group">-->
-<!--            <label>-->
-<!--                <input type="text" name="tel" class="default-form__input" placeholder="+7 ___ - ___ -__ - __" required>-->
-<!--            </label>-->
-<!--        </div>-->
-<!--        <div class="modal__personaldata">-->
-<!--            Согласен(а) на обработку <a href="#">персональных данных</a>-->
-<!--        </div>-->
-<!--        <div class="default-form__group">-->
-<!--            <input type="hidden" name="form_subject" value="Модальная форма - заказать обратный звонок">-->
-<!--            <button type="submit" class="default-form__submit default-form__submit&#45;&#45;full btn btn_green">заказать-->
-<!--                обратный звонок-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </form>-->
-<!--</div>-->
 
 <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
 <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
 <script src="js/slick.min.js" type="text/javascript"></script>
-<script src="js/scripts.js" type="text/javascript"></script>
+<!--<script src="js/scripts.js" type="text/javascript"></script>-->
+<script src="https://noptica.ru/templates/noptica_2.0/js/kk.js?25-02-20" type="text/javascript"></script>
+
 
 </body>
 
