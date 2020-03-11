@@ -3,6 +3,127 @@
 /* RESET */
 @import "min-reset"
 
+.header
+  position: relative
+  overflow: hidden
+
+  &::after
+    content: ''
+    width: 100vw
+    border-bottom: 1px solid #e5e5e5
+    position: absolute
+    top: 60px
+    z-index: 1
+
+  &_left
+    width: 89%
+
+  &__container
+    display: flex
+    justify-content: space-between
+    z-index: 2
+    position: relative
+
+  &_top
+    width: 90%
+    justify-content: space-between
+    display: flex
+    position: relative
+
+  &__nav
+    ul
+      display: flex
+
+    li
+      margin-right: 40px
+      margin-top: 23px
+
+    a
+      @include font(#000, $gothamBold, bold, 13px, 1)
+      text-transform: uppercase
+      padding-bottom: 23px
+      @include transition(none)
+
+      &:hover
+        color: #797979
+        @include transition(none)
+        border-bottom: 1px solid #000
+
+        .header__nav li
+
+  &_bottom
+    display: flex
+    justify-content: space-between
+    padding: 20px 0
+    align-items: center
+
+    .logo
+      margin-right: 30px
+
+  &__social
+    display: flex
+
+    li
+      margin-right: 20px
+
+  &__time
+    p
+      @include font($textBlack, $gothamRegular, normal, 15px)
+
+    a
+      @include font(#000, $gothamMedium, 500, 30px)
+
+  &_right
+    width: 10%
+    text-align: center
+
+    img
+      width: 30px
+      display: block
+      margin: 0 auto
+
+  &__cart
+    background: url("../images/bg.png") bottom center no-repeat
+    padding: 10px 10px 20px
+
+    a
+      @include font(#fff, $gothamBold, bold, 10px)
+
+    &__price
+      opacity: 0.8
+
+    img
+      margin-bottom: 5px
+
+  &__user
+    @include font(#005e90, $gothamBold, bold, 10px)
+    text-decoration: underline
+
+.search
+  margin-top: 20px
+  display: flex
+
+  input[type="search"]
+    border: none
+    padding: 5px 0
+    @include font($textBlack, $gothamRegular, normal, 15px)
+
+  input[type="image"]
+    width: 20px
+
+.btn
+  display: inline-block
+  padding: 0 20px
+  +border-radius(30px)
+  border: #fff solid 2px
+  +box-shadow($shadow: 0 0 5px rgba(0, 0, 0, 0.17))
+
+  &_red
+    @include font(#ffffff, $gothamRegular, normal, 12px, 50px)
+    background: #e30613
+    text-transform: uppercase
+    box-sizing: border-box
+
 .breadcrumbs
   width: 100%
   border-bottom: 1px solid #ccc
