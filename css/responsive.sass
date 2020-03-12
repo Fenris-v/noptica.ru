@@ -2,13 +2,105 @@
 @import "prefixes"
 
 @media only screen and (max-width: 1200px)
+  .wrapper
+    padding: 0 15px
 
-@media only screen and (max-width: 1100px)
+  .header__nav li
+    margin-right: 20px
+
+  .header_bottom
+    .btn_red
+      line-height: 1.1
+      padding: 10px 20px
+      text-align: center
+      max-width: 190px
+
+  .logo
+    margin-right: 15px
+
+  .header__social li
+    margin-right: 10px
+
+  .header__time
+    margin-right: 15px
+
+    p
+      font-size: 14px
+
+    a
+      font-size: 22px
+
+  .catalog__container__side
+    width: 25%
+
+  .catalog-container__content
+    width: 75%
 
 @media only screen and (max-width: 1000px)
+  .header_top
+    display: none
+
+  .header_right
+    display: none
+
+  .header_left
+    width: 100%
+
+  .catalog__container__side
+    width: 30%
+
+  .catalog-container__content
+    width: 70%
+
+  .catalog__item
+    width: 32%
+
+  .header::after
+    display: none
+
+  .header_bottom
+    flex-wrap: wrap
+
+  .logo
+    margin: 0 auto 20px
+
+  .header__social
+    margin-left: auto
+
+  .header__time, .header_bottom .btn_red
+    width: 49%
+
+  .header_bottom .btn_red
+    max-width: 300px
+
 
 @media only screen and (max-width: 900px)
 
 @media only screen and (max-width: 767px)
+  .catalog__container__side
+    width: 100%
+    padding-right: 0
+
+  .catalog-container__content
+    width: 100%
+
+  .catalog__item
+    width: 49%
 
 @media only screen and (max-width: 640px)
+  .header__time, .header_bottom .btn_red
+    display: none
+
+  .social
+    justify-content: center
+
+  .social, .footer__nav, .contact__contaier
+    width: 100%
+    margin-bottom: 20px
+
+  .contact
+    text-align: center
+    max-width: 100%
+
+  .copyright__container
+    padding-top: 0

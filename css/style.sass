@@ -25,7 +25,6 @@
     position: relative
 
   &_top
-    width: 90%
     justify-content: space-between
     display: flex
     position: relative
@@ -121,10 +120,17 @@
   margin-top: 20px
   display: flex
 
+  li:first-child
+    width: 90%
+
+  li:last-child
+    width: 10%
+
   input[type="search"]
     border: none
     padding: 5px 0
     @include font($textBlack, $gothamRegular, normal, 15px)
+    width: 100%
 
   input[type="image"]
     width: 20px
