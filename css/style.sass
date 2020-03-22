@@ -636,6 +636,354 @@ form
   a:hover
     text-decoration: underline
 
+/* MAIN PAGE */
+.fullHD
+  max-width: 1920px
+  margin: 0 auto
+
+.s_linkStore
+  margin-bottom: 80px
+
+.linkStore
+  display: flex
+  justify-content: space-between
+
+  &__item
+    width: 48%
+    background-size: contain
+    position: relative
+    padding: 20px 0 20px 40px
+
+    &__title a
+      @include font($blueText, $gothamMedium, 500, 28px, 34px)
+      text-decoration: underline
+
+    &:first-child
+      background: $greyBg url("../images/main/eye.png") right no-repeat
+
+    &:last-child
+      background: $blueBg url("../images/main/eye-test.png") right no-repeat
+
+      .linkStore__item__title a
+        color: $white
+
+    &__img
+      position: absolute
+      height: 120%
+      top: 0
+      right: 20px
+
+      img
+        max-height: 100%
+
+.innerTitle
+  @include font($black, $gothamLight, 300, 40px)
+
+.s_popular
+  margin-bottom: 80px
+
+.popular
+
+  &__title
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+
+    .tabs
+      display: flex
+      padding: 3px
+      border: 1px solid $grey
+      +border-radius(30px)
+
+      .tab
+        a
+          display: block
+          @include font($blueText, $gothamBold, bold, 12px, 40px)
+          padding: 0 30px
+          white-space: nowrap
+          text-align: center
+          +border-radius(30px)
+          @include transition()
+          text-transform: uppercase
+
+        &.tab_active a, a:hover
+          @include transition()
+          color: black
+          background: $grey
+
+.tab__content
+  justify-content: space-between
+  display: none
+
+  &_active
+    display: flex
+
+  &__item
+    width: 18%
+
+    &__img
+      height: 200px
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      background: $greyBg
+
+      &__tag
+        display: none
+        position: absolute
+        width: 71px
+        height: 22px
+        background: url("../images/main/tag.png") no-repeat
+        text-align: center
+        @include font($white, $gothamBold, bold, 14px, 22px)
+        top: 10px
+        right: 10px
+
+    &.tab__content__item_discount .tab__content__item__img__tag
+      display: block
+
+      img
+        width: 100%
+        +object-fit(contain)
+
+    a
+      @include font($textBlack, $gothamRegular, normal, 20px, 28px)
+      text-decoration: underline
+      margin-bottom: 20px
+      display: inline-block
+
+      &:hover
+        text-decoration: none
+
+    &__discount
+      @include font($textBlack, $gothamRegular, normal, 16px)
+      text-decoration: line-through
+
+    &__price
+      margin-right: 10px
+      @include font($red, $gothamBold, bold, 24px)
+
+      &__container
+        display: flex
+        align-items: flex-start
+
+.s_all
+  margin-bottom: 100px
+
+.all
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__item
+    width: 18%
+    display: flex
+    align-items: center
+
+    img
+      width: 45px
+      margin-right: 20px
+
+    a
+      @include font($darkBlueText, $gothamMedium, 500, 16px, 23px)
+      display: inline-block
+      max-width: 160px
+      text-decoration: underline
+
+      &:hover
+        text-decoration: none
+
+.offer_wrapper.fullHD
+  background: url("../images/main/bg.jpg") center no-repeat
+  background-size: cover
+
+.offer
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+  &_left
+
+    &_top
+      width: 32%
+      @include font($black, $gothamLight, 300, 33px, 40px)
+      padding: 80px 0
+
+      span
+        @include font($red, $gothamBold, bold, 33px, 40px)
+
+    &_bottom
+      padding: 45px 0
+      display: flex
+      align-items: center
+
+      img
+        max-width: 110px
+        margin-right: 40px
+
+      p
+        @include font($white, $gothamMedium, 500, 36px, 42px)
+        max-width: 250px
+
+  &__int
+    @include font($red, $gothamBold, bold, 365px)
+    position: absolute
+    left: 50%
+    top: 30px
+    transform: translateX(-100%)
+
+  > img
+    position: absolute
+    height: 105%
+    bottom: 0
+    left: 50%
+    +transform(translateX(-25%))
+
+  &_right
+    max-width: 290px
+
+    &__number
+      @include font($white, $gothamBold, bold, 70px, 95px)
+      padding-top: 60px
+      margin-bottom: 20px
+
+    p
+      @include font($white, $gothamMedium, 500, 22px, 32px)
+      margin-bottom: 20px
+
+.btn_blue
+  @include font($white, $gothamBold, bold, 12px, 50px)
+  background: $darkBlueText
+  text-transform: uppercase
+
+.s_map
+  .innerTitle
+    text-align: center
+    margin: 90px 0
+
+    span
+      font-family: $gothamBold
+      font-weight: bold
+
+  .fullHD
+    position: relative
+
+.map__wrapper
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+
+.map
+
+  &__form
+    margin-left: auto
+    display: flex
+    background: $blueBg
+    flex-direction: column
+    max-width: 40%
+    height: 100%
+    padding: 70px 40px
+
+    &__title
+      @include font($white, $gothamMedium, 500, 24px, 32px)
+      text-align: center
+      margin-bottom: 50px
+
+    label
+      display: none
+
+    select
+      width: 100%
+      outline: none
+      padding: 0 40px
+      @include font($black, $gothamRegular, normal, 16px)
+      height: 55px
+      +border-radius(30px)
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+
+    li
+      margin-bottom: 10px
+
+      &:last-child
+        margin-bottom: 0
+
+    ul
+      margin-bottom: 40px
+
+    p
+      @include font($white, $gothamRegular, normal, 14px, 20px)
+      margin-bottom: 40px
+
+    input
+      width: 100%
+
+.s_why
+  padding: 90px 0 50px
+  background: $greyBg
+
+.why
+
+  &__title
+    display: flex
+    align-items: center
+    margin-bottom: 100px
+
+    .innerTitle
+      padding-right: 80px
+      border-right: 9px solid $red
+      margin-right: 60px
+      width: 680px
+
+      span
+        font-family: $gothamBold
+        font-weight: bold
+
+    .secondTitle
+      @include font($textBlack, $gothamRegular, normal, 18px, 29px)
+      max-width: 400px
+
+  &__items
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__item
+    width: 32%
+    background: $white
+    margin-bottom: 40px
+    position: relative
+    padding: 40px
+
+    &__label
+      background: url("../images/main/label.png") center no-repeat
+      background-size: contain
+      width: 150px
+      text-align: center
+      @include font($white, $gothamBold, bold, 12px, 28px)
+      text-transform: uppercase
+      position: absolute
+      left: 40px
+      top: 0
+      +transform(translateY(-50%))
+
+    img
+      width: 70px
+      margin-bottom: 30px
+
+    &__title
+      @include font($black, $gothamMedium, 500, 24px, 30px)
+      margin-bottom: 30px
+
+    p
+      @include font($textBlack, $regular, normal, 15px, 22px)
+
 /* RESPONSIVE */
 @import "responsive"
 /* HAMBURGER */
