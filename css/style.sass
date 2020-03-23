@@ -143,7 +143,7 @@
   +box-shadow($shadow: 0 0 5px rgba(0, 0, 0, 0.17))
 
   &_red
-    @include font(#ffffff, $gothamRegular, normal, 12px, 50px)
+    @include font(#ffffff, $gothamBold, bold, 12px, 50px)
     background: #e30613
     text-transform: uppercase
     box-sizing: border-box
@@ -575,71 +575,179 @@ form
   transform: rotate(-135deg)
 
 .footer
-  border-top: #d9d9d9
-  background: #4a4a4a
-  margin-top: 20px
+  background: $blueBg
+  padding: 70px 0
 
   &__container
     display: flex
-    flex-wrap: wrap
     justify-content: space-between
-    margin: 20px 0
 
-.social
-  display: flex
-  width: 30%
-  li
-    margin-right: 10px
+  &_part
+    width: 30%
 
-    img
-      width: 32px
-      height: 32px
+  &__logo
+    margin-bottom: 20px
+    display: block
 
-.footer__nav
-  width: 50%
-  display: flex
-  justify-content: space-between
+  &__title
+    &_big
+      text-transform: uppercase
+      @include font($white, $gothamBold, bold, 38px)
+      margin-bottom: 10px
 
-  ul
-    width: 45%
+    &_small
+      text-transform: uppercase
+      @include font($white, $gothamRegular, normal, 12px)
 
-    li
-      text-align: center
+  &__social
+    @include font($white, $gothamMedium, 500, 14px, 20px)
+    display: flex
+    align-items: center
 
-    li a:hover, .bottom-menu ul li a:focus
-      color: #ACACAC
-      text-decoration: underline
+    p
+      margin-right: 20px
 
-    li a
-      color: #ffffff
+    ul
+      display: flex
 
-.copyright__container
-  width: 100%
-  text-align: center
-  padding-top: 30px
+      li
+        margin-right: 10px
 
-.copyright
-  color: #ACACAC
-  text-align: center
+        a
+          padding: 10px
+          background: $darkBlueText
+          +border-radius(50%)
+          display: flex
+          justify-content: center
+          align-items: center
 
-.contact__contaier
-  width: 20%
+          img
+            max-width: 20px
+            max-height: 20px
 
-.contact
-  margin-left: auto
-  text-align: right
-  max-width: 200px
+  &__nav
+    display: flex
+    justify-content: space-between
 
-  p
-    @include font(#ACACAC, $regular, normal, 14px, 1.2)
+    ul
+      width: 30%
+      margin-bottom: 10px
 
-  a:hover
-    text-decoration: underline
+      li
+        margin-bottom: 10px
+
+      a
+        @include font($white, $gothamBold, bold, 13px, 20px)
+        display: inline-block
+        text-transform: uppercase
+
+  &__copyright
+    display: flex
+    justify-content: space-between
+
+    &_half
+      width: 45%
+
+      a
+        text-decoration: underline
+        @include font($white, $gothamRegular, normal, 14px 18px)
+
+      p
+        @include font($white, $gothamLight, 300, 14px 18px)
+
+  &__time
+    @include font($white, $gothamLight, 300, 14px 18px)
+    margin-bottom: 10px
+
+  &__contact
+    ul
+      display: flex
+      margin-bottom: 20px
+
+      li
+        margin-right: 20px
+
+        a
+          display: inline-block
+
+        &:first-child
+          margin-right: 10px
+
+        &:last-child
+          margin-right: 0
+
+          a
+            @include font($white, $gothamMedium, 500, 30px)
+
+    .btn_red
+      border: none
+      padding: 0 50px
+
 
 /* MAIN PAGE */
 .fullHD
   max-width: 1920px
   margin: 0 auto
+
+.s_firstSlider
+  margin-bottom: 90px
+
+  .fullHD
+    background: url("../images/main/first-screen-bg.jpg") center no-repeat
+    background-size: 100%
+
+.firstSlider
+  &__slide
+    position: relative
+
+    &__img
+      height: 110%
+      position: absolute
+      right: -20%
+      top: -5%
+
+  &_top
+    display: flex
+    justify-content: space-between
+    width: 55%
+    padding-top: 35px
+    margin-bottom: 100px
+
+  &__item
+    width: 48%
+    background: $white
+    padding: 15px
+    display: flex
+
+    img
+      border: 1px solid $grey
+      max-width: 80px
+      margin-right: 20px
+      +object-fit(contain)
+
+    &__prop
+      &__title
+        @include font($black, $gothamMedium, 500, 18px, 26px)
+        margin-bottom: 10px
+
+      &__price
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+        &_new
+          @include font($red, $gothamMedium, 500, 18px)
+
+        &_old
+          @include font($textBlack, $gothamRegular, normal, 15px)
+
+  &_bottom
+    p
+      @include font($white, $gothamMedium, 500, 30px, 40px)
+      margin-bottom: 45px
+
+    .btn
+      margin-bottom: 36px
 
 .s_linkStore
   margin-bottom: 80px
@@ -927,6 +1035,7 @@ form
 .s_why
   padding: 90px 0 50px
   background: $greyBg
+  margin-bottom: 90px
 
 .why
 
@@ -983,6 +1092,184 @@ form
 
     p
       @include font($textBlack, $regular, normal, 15px, 22px)
+
+.s_company
+  .fullHD
+    background: rgb(255,255,255)
+    background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(196,206,215,1) 100%) no-repeat
+    background-position: bottom center
+    background-size: 100% 60px
+    position: relative
+    z-index: 2
+
+.company
+
+  &__bg
+    position: relative
+    z-index: 1
+    background: url("../images/main/table.png") no-repeat
+    background-position: left 20px
+
+  &_top
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 50px
+
+    img
+      width: 48%
+      margin-top: -35px
+      +object-fit(cover )
+
+    &__content
+      width: 48%
+
+      .innerTitle
+        max-width: 430px
+        margin-bottom: 30px
+
+        span
+          font-weight: bold
+          font-family: $gothamBold
+
+      p
+        @include font($textBlack, $gothamRegular, normal, 15px, 26px)
+        margin-bottom: 25px
+
+        &:last-child
+          margin-bottom: 0
+
+      .text_red
+        @include font($red, $gothamMedium, 500, 18px, 29px)
+        margin-left: -9%
+        padding-left: 7.5%
+        border-left: 9px solid $red
+        margin-bottom: 30px
+        max-width: 420px
+
+  &_bottom
+    width: 80%
+    margin-left: auto
+    display: flex
+    justify-content: space-between
+
+    &__item
+      display: flex
+      align-items: center
+      padding-bottom: 70px
+
+      &__num
+        @include font($red, $gothamBold, bold, 98px)
+        margin-right: 30px
+
+      &__text
+        @include font($textBlack, $gothamRegular, normal, 20px, 26px)
+
+        span
+          color: $red
+          font-family: $gothamBold
+          font-weight: bold
+
+.s_questions
+
+  .fullHD
+    background: url("../images/main/form-bg.jpg") center no-repeat
+
+.questions
+  padding: 90px
+  display: flex
+  justify-content: space-between
+
+  &__title
+    @include font($white, $gothamBold, bold, 40px)
+    margin-bottom: 10px
+
+  &__desc
+    @include font($white, $gothamLight, 300, 22px)
+    margin-bottom: 22px
+
+  &_left
+    width: 55%
+
+    .btn_red
+      border: none
+      padding: 0 50px
+
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    li
+      width: 49%
+
+      input, textarea
+        +border-radius(5px)
+        @include font($black, $gothamRegular, normal, 16px, 45px)
+        padding: 0 20px
+        border: none
+        width: 100%
+        margin-bottom: 10px
+
+      textarea
+        height: 72px
+        line-height: 1.2
+        padding: 10px 20px
+        resize: none
+
+      &:last-child
+        width: 100%
+
+  &_right
+    width: 40%
+    background: $white
+
+  &__contact
+    padding: 40px
+
+    &__title
+      @include font($black, $gothamBold, bold, 40px)
+
+    &__address
+      display: flex
+      align-items: center
+      @include font($black, $gothamMedium, 500, 16px, 24px)
+      text-decoration: underline
+      max-width: 320px
+      border-bottom: 1px solid $grey
+      padding-bottom: 20px
+      margin-bottom: 20px
+
+      &::before
+        content: ''
+        background: url("../images/icons/map.svg") center no-repeat
+        background-size: contain
+        width: 30px
+        height: 30px
+        display: block
+        margin-right: 20px
+
+    &__phone
+      display: flex
+      align-items: center
+      @include font($black, $gothamRegular, normal, 26px)
+      max-width: 320px
+      margin-bottom: 40px
+
+      &::before
+        content: ''
+        background: url("../images/icons/phone.svg") center no-repeat
+        background-size: contain
+        width: 30px
+        height: 20px
+        display: block
+        margin-right: 20px
+
+    .btn_red
+      border: none
+      padding: 0 50px
+
+
 
 /* RESPONSIVE */
 @import "responsive"
