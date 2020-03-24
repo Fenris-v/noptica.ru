@@ -272,6 +272,16 @@ input[type=email] {
 .header_bottom .logo {
   margin-right: 30px;
 }
+.header_bottom .logo img {
+  margin-bottom: 10px;
+}
+.header_bottom .logo p {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Gotham, sans-serif;
+  color: #4A4A4A;
+  line-height: 1;
+}
 .header__social {
   display: flex;
 }
@@ -943,13 +953,7 @@ form {
   margin-bottom: 20px;
   display: block;
 }
-.footer__title_big {
-  text-transform: uppercase;
-  font-size: 38px;
-  font-weight: bold;
-  font-family: GothamBold, sans-serif;
-  color: #ffffff;
-  line-height: 1;
+.footer__logo img {
   margin-bottom: 10px;
 }
 .footer__title_small {
@@ -1080,18 +1084,57 @@ form {
   margin-bottom: 90px;
 }
 .s_firstSlider .fullHD {
+  margin-top: -50px;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.s_firstSlider .fullHD__bg {
   background: url("../images/main/first-screen-bg.jpg") center no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.slick-dots li {
+  margin-right: 30px;
+}
+.slick-dots button {
+  outline: none;
+  border: none;
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 0;
+  background: #ffffff;
+}
+.slick-dots .slick-active button {
+  background: #e30613;
 }
 
 .firstSlider__slide {
   position: relative;
 }
 .firstSlider__slide__img {
-  height: 110%;
   position: absolute;
-  right: 10%;
-  top: -5%;
+  right: 5%;
+  /* top: 0; */
+  bottom: -41px;
+  max-height: 570px;
 }
 .firstSlider_top {
   display: flex;

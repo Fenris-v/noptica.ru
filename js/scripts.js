@@ -26,8 +26,10 @@ $(document).ready(() => {
     if(slider.length > 0) {
 
         slider.slick({
+            arrows: false,
+            dots: true,
             responsive: [{
-                breakpoint: 480,
+                breakpoint: 0,
                 settings: {
                     arrows: false
                 }
