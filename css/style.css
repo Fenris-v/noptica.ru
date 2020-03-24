@@ -384,6 +384,17 @@ input[type=email] {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.btn:hover {
+  opacity: 0.8;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .btn_red {
   font-size: 12px;
@@ -1079,7 +1090,7 @@ form {
 .firstSlider__slide__img {
   height: 110%;
   position: absolute;
-  right: -20%;
+  right: 10%;
   top: -5%;
 }
 .firstSlider_top {
@@ -1110,6 +1121,18 @@ form {
   line-height: 26px;
   margin-bottom: 10px;
   display: inline-block;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.firstSlider__item__prop__title:hover {
+  color: #46b4e7;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
 }
 .firstSlider__item__prop__price {
   display: flex;
@@ -1163,6 +1186,17 @@ form {
   color: #46b4e7;
   line-height: 34px;
   text-decoration: underline;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.linkStore__item__title a:hover {
+  text-decoration: none;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .linkStore__item:first-child {
   background: #f9f9f9 url("../images/main/eye.png") right no-repeat;
@@ -1172,6 +1206,17 @@ form {
 }
 .linkStore__item:last-child .linkStore__item__title a {
   color: #ffffff;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.linkStore__item:last-child .linkStore__item__title a:hover {
+  text-decoration: none;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .linkStore__item__img {
   position: absolute;
@@ -1192,9 +1237,13 @@ form {
 }
 
 .s_popular {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
+.popular {
+  height: 480px;
+  overflow: hidden;
+}
 .popular__title {
   display: flex;
   justify-content: space-between;
@@ -1208,7 +1257,7 @@ form {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-.popular__title .tabs .tab a {
+.popular__title .tabs .tab {
   display: block;
   font-size: 12px;
   font-weight: bold;
@@ -1227,18 +1276,25 @@ form {
   transition: all 0.4s ease 0s;
   text-transform: uppercase;
 }
-.popular__title .tabs .tab.tab_active a, .popular__title .tabs .tab a:hover {
+.popular__title .tabs .tab.tab_active, .popular__title .tabs .tab:hover {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   color: black;
   background: #f1f1f1;
+  cursor: pointer;
 }
 
 .tab__content {
-  justify-content: space-between;
   display: none;
+}
+.tab__content_first {
+  display: block;
+}
+.tab__content__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .tab__content_active {
   display: flex;
@@ -1286,8 +1342,17 @@ form {
   text-decoration: underline;
   margin-bottom: 20px;
   display: inline-block;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .tab__content__item a:hover {
+  color: #46b4e7;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
   text-decoration: none;
 }
 .tab__content__item__discount {
@@ -1341,6 +1406,11 @@ form {
 }
 .all__item a:hover {
   text-decoration: none;
+  color: #46b4e7;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .offer_wrapper.fullHD {

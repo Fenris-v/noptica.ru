@@ -141,6 +141,11 @@
   +border-radius(30px)
   border: #fff solid 2px
   +box-shadow($shadow: 0 0 5px rgba(0, 0, 0, 0.17))
+  @include transition()
+
+  &:hover
+    opacity: 0.8
+    @include transition()
 
   &_red
     @include font(#ffffff, $gothamBold, bold, 12px, 50px)
@@ -696,6 +701,9 @@ form
     background: url("../images/main/first-screen-bg.jpg") center no-repeat
     background-size: 100%
 
+.slick-list
+  //overflow: visible
+
 .firstSlider
   &__slide
     position: relative
@@ -703,7 +711,7 @@ form
     &__img
       height: 110%
       position: absolute
-      right: -20%
+      right: 10%
       top: -5%
 
   &_top
@@ -730,6 +738,12 @@ form
         @include font($black, $gothamMedium, 500, 18px, 26px)
         margin-bottom: 10px
         display: inline-block
+        @include transition()
+
+        &:hover
+          color: $blueText
+          @include transition()
+          cursor: pointer
 
       &__price
         display: flex
@@ -766,6 +780,11 @@ form
     &__title a
       @include font($blueText, $gothamMedium, 500, 28px, 34px)
       text-decoration: underline
+      @include transition()
+
+      &:hover
+        text-decoration: none
+        @include transition()
 
     &:first-child
       background: $greyBg url("../images/main/eye.png") right no-repeat
@@ -775,6 +794,11 @@ form
 
       .linkStore__item__title a
         color: $white
+        @include transition()
+
+        &:hover
+          text-decoration: none
+          @include transition()
 
     &__img
       position: absolute
@@ -789,9 +813,11 @@ form
   @include font($black, $gothamLight, 300, 40px)
 
 .s_popular
-  margin-bottom: 80px
+  margin-bottom: 50px
 
 .popular
+  height: 480px
+  overflow: hidden
 
   &__title
     display: flex
@@ -805,24 +831,30 @@ form
       +border-radius(30px)
 
       .tab
-        a
-          display: block
-          @include font($blueText, $gothamBold, bold, 12px, 40px)
-          padding: 0 30px
-          white-space: nowrap
-          text-align: center
-          +border-radius(30px)
-          @include transition()
-          text-transform: uppercase
+        display: block
+        @include font($blueText, $gothamBold, bold, 12px, 40px)
+        padding: 0 30px
+        white-space: nowrap
+        text-align: center
+        +border-radius(30px)
+        @include transition()
+        text-transform: uppercase
 
-        &.tab_active a, a:hover
+        &.tab_active, &:hover
           @include transition()
           color: black
           background: $grey
+          cursor: pointer
 
 .tab__content
-  justify-content: space-between
   display: none
+
+  &_first
+    display: block
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
 
   &_active
     display: flex
@@ -861,8 +893,11 @@ form
       text-decoration: underline
       margin-bottom: 20px
       display: inline-block
+      @include transition()
 
       &:hover
+        color: $blueText
+        @include transition()
         text-decoration: none
 
     &__discount
@@ -902,6 +937,8 @@ form
 
       &:hover
         text-decoration: none
+        color: $blueText
+        @include transition()
 
 .offer_wrapper.fullHD
   background: url("../images/main/bg.jpg") center no-repeat
