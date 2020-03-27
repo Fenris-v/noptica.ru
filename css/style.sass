@@ -71,6 +71,9 @@
     li
       margin-right: 20px
 
+      img
+        width: 30px
+
   &__time
     p
       @include font($textBlack, $gothamRegular, normal, 15px)
@@ -598,10 +601,13 @@ form
 
   &__logo
     margin-bottom: 20px
-    display: block
+    display: flex
+    flex-direction: column
+    max-width: 450px
 
     img
       margin-bottom: 10px
+      max-width: 450px
 
   &__title
 
@@ -955,6 +961,10 @@ form
 .s_all
   margin-bottom: 100px
 
+  .innerTitle
+    text-align: center
+    margin-bottom: 90px
+
 .all
   display: flex
   justify-content: space-between
@@ -1065,6 +1075,9 @@ form
   height: 100%
 
 .map
+  max-width: 100%
+  overflow: hidden
+  min-height: 650px
 
   &__form
     margin-left: auto

@@ -75,14 +75,43 @@
       &:first-child
         margin-bottom: 20px
 
+  .questions
+    padding: 90px 0
+
   .firstSlider__slide__img
-    max-width: auto
     max-height: 300px
     top: 73%
 
   .firstSlider_top
-    max-width: 100%
-    width: 100%
+    //max-width: 100%
+    //width: 100%
+    display: none
+
+  .firstSlider_bottom
+    text-align: center
+    padding-top: 50px
+
+  .slick-slide img
+    position: static
+    margin: 0 auto
+    @include transform(translateY(22px))
+
+  .footer
+
+    &__container
+      flex-wrap: wrap
+
+    &_part
+      width: 48%
+      margin-bottom: 30px
+
+      &:last-child
+        width: 100%
+        margin-bottom: 0
+        text-align: center
+
+    &__contact ul
+      justify-content: center
 
 @media only screen and (max-width: 1100px)
   .tab__content__wrapper, .all
@@ -154,6 +183,16 @@
 
     &__num
       margin-right: 0
+
+  .why__title .innerTitle
+    padding-right: 20px
+    margin-right: 20px
+
+  .offer__int
+    display: none
+
+  .offer_left_top
+    width: 95%
 
 @media only screen and (max-width: 900px)
 
@@ -262,11 +301,51 @@
     flex-wrap: wrap
     padding: 30px 0
 
-    &_left, &_right
+    &_left
       width: 100%
+
+      .btn
+        margin: 0 auto
+        display: block
+
+    &_right
+      width: 100%
+      max-width: 390px
+      margin: 0 auto
+
+  .why__title
+    align-items: flex-start
+
+    .innerTitle
+      border: none
+      padding: 0
+      margin:  0 0 20px
+      width: auto
+
+    .secondTitle
+      width: 100%
+      max-width: 100%
 
   .why__item
     width: 100%
+
+  .offer_left
+    text-align: center
+
+  .offer_right
+    margin: 0 auto
+    padding-bottom: 30px
+    text-align: center
+
+  .footer_part
+    width: 100%
+    text-align: center
+
+  .footer__logo
+    margin: 0 auto 20px
+
+  .footer__social
+    justify-content: center
 
 @media only screen and (max-width: 640px)
   .header__time, .header_bottom .btn_red
