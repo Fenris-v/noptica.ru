@@ -863,7 +863,6 @@ form
 
 .popular
   height: 480px
-  overflow: hidden
 
   &__title
     display: flex
@@ -899,8 +898,10 @@ form
     display: block
 
   &__wrapper
-    display: flex
-    justify-content: space-between
+    //display: flex
+    //justify-content: space-between
+    margin: 0 -5px
+    position: relative
 
   &_active
     display: flex
@@ -957,6 +958,34 @@ form
       &__container
         display: flex
         align-items: flex-start
+
+.tab__content__wrapper
+  .slick-list
+    overflow: hidden
+
+  .slick-slide
+    margin: 0 5px
+
+  .slick-arrow
+    position: absolute
+    top: 35%
+    font-size: 0
+    margin: auto
+    border: none
+    width: 57px
+    height: 57px
+    cursor: pointer
+    color: transparent
+    background: none
+    z-index: 1
+
+  .slick-next
+    right: -30px
+    background: url("../images/icons/right-arrow.svg")
+
+  .slick-prev
+    left: -30px
+    background: url("../images/icons/left-arrow.svg")
 
 .s_all
   margin-bottom: 100px
@@ -1096,16 +1125,37 @@ form
     label
       display: none
 
-    select
+    input[type="text"]
       width: 100%
       outline: none
       padding: 0 40px
-      @include font($black, $gothamRegular, normal, 16px)
+      @include font($black, $gothamRegular, normal, 16px, 55px)
       height: 55px
       +border-radius(30px)
-      -webkit-appearance: none
-      -moz-appearance: none
-      appearance: none
+      display: flex
+      align-items: center
+      border: none
+
+    .select2
+      width: 100% !important
+
+      &-selection
+        width: 100%
+        outline: none
+        padding: 0 40px
+        @include font($black, $gothamRegular, normal, 16px, 55px)
+        height: 55px
+        +border-radius(30px)
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        display: flex
+        align-items: center
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+      top: 50%
+      +transform(translateY(-50%))
+      right: 15px
 
     li
       margin-bottom: 10px

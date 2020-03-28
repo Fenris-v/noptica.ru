@@ -114,21 +114,26 @@
       justify-content: center
 
 @media only screen and (max-width: 1100px)
-  .tab__content__wrapper, .all
-    flex-wrap: wrap
-
   .tab__content__item, .all__item
     width: 32%
     margin-bottom: 20px
 
-  .popular
-    height: 760px
+  .tab__content__wrapper
+    margin: 0 20px
 
   .offer > img
     display: none
 
   .offer__int
     transform: translateX(-50%)
+
+  .all
+    flex-wrap: wrap
+    justify-content: space-around
+
+    &__item
+      width: 30%
+      margin-bottom: 20px
 
 @media only screen and (max-width: 1000px)
   .header_top
@@ -193,6 +198,20 @@
 
   .offer_left_top
     width: 95%
+
+  .questions
+    flex-wrap: wrap
+
+    &_left, &_right
+      width: 100%
+
+    &_right
+      max-width: 390px
+      margin: 0 auto
+
+  .questions_left .btn
+    margin: 0 auto
+    display: block
 
 @media only screen and (max-width: 900px)
 
@@ -262,9 +281,6 @@
 
   .offer__int
     display: none
-
-  .popular
-    height: 1430px
 
   .offer_left_top, .offer_left
     width: 100%
