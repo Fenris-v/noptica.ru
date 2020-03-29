@@ -1606,7 +1606,6 @@ form {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
   height: 100%;
 }
@@ -1621,7 +1620,7 @@ form {
   display: flex;
   background: #5584c4;
   flex-direction: column;
-  max-width: 40%;
+  max-width: 450px;
   height: 100%;
   padding: 70px 40px;
 }
