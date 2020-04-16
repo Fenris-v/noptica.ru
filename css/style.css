@@ -222,7 +222,7 @@ input[type=email] {
   z-index: 1;
 }
 .header_left {
-  width: 89%;
+  width: 100%;
 }
 .header__container {
   display: flex;
@@ -254,6 +254,7 @@ input[type=email] {
   -o-transition: none;
   -webkit-transition: none;
   transition: none;
+  white-space: nowrap;
 }
 .header__nav a:hover {
   color: #797979;
@@ -262,6 +263,7 @@ input[type=email] {
   -webkit-transition: none;
   transition: none;
   border-bottom: 1px solid #000;
+  text-decoration: none;
 }
 .header_bottom {
   display: flex;
@@ -271,6 +273,8 @@ input[type=email] {
 }
 .header_bottom .logo {
   margin-right: 30px;
+  width: auto;
+  float: none;
 }
 .header_bottom .logo img {
   margin-bottom: 10px;
@@ -327,6 +331,9 @@ input[type=email] {
 .header__cart__price {
   opacity: 0.8;
 }
+.header__cart__price span {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 .header__cart__icon {
   position: relative;
 }
@@ -347,7 +354,7 @@ input[type=email] {
   font-family: GothamBold, sans-serif;
   color: #e30613;
   line-height: 1;
-  right: 35%;
+  right: 13%;
   top: 0;
 }
 .header__cart__icon img {
@@ -381,9 +388,14 @@ input[type=email] {
   color: #4A4A4A;
   line-height: 1;
   width: 100%;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .search input[type=image] {
   width: 20px;
+  border: none;
 }
 
 .btn {
@@ -1098,8 +1110,9 @@ form {
   background-size: cover;
   position: relative;
 }
-.s_firstSlider .fullHD__bg .header_right {
-  position: absolute;
+
+.header_right {
+  position: fixed;
   top: 50%;
   right: 0;
   -moz-transform: translateY(-50%);
@@ -2249,10 +2262,6 @@ form {
     display: none;
   }
 
-  .header_right {
-    display: none;
-  }
-
   .header_left {
     width: 100%;
   }
@@ -2747,7 +2756,7 @@ form {
   -moz-transition: opacity 0.2s ease 0.4s, transform 0.2s ease 0.4s, -moz-transform 0.2s ease 0.4s;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   .header__hamburger {
     display: block !important;
     position: absolute;
