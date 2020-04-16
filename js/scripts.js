@@ -78,14 +78,13 @@ $(document).ready(() => {
         /**
          * Ya.maps
          */
+        let optionList;
         if ($('#yandex_map').length != 0) {
-
-            // let greenMapBlock = $('#greenMapBlock'),
-            //     greyMapBlock = $('#greyMapBlock');
 
             ymaps.ready(init);
             let myMap;
             let item;
+            let myPoint;
 
             function init() {
 
@@ -95,11 +94,9 @@ $(document).ready(() => {
                 });
                 myMap.behaviors.disable('scrollZoom');
 
-
                 $.getJSON('data/data.json', function (data) {
 
                     let myPointArr = [];
-                    let string = '';
 
                     for (let key in data) {
                         let dataPoint = data[key];
@@ -112,16 +109,20 @@ $(document).ready(() => {
                         item.innerText = myPointArr[1].hintContent;
                         $('#store').append(item);
 
-                        let myPoint = new ymaps.Placemark(myPointArr[0], myPointArr[1]);
+                        myPoint = new ymaps.Placemark(myPointArr[0], myPointArr[1]);
+
+                        myPoint.events.add('click', (e) => {
+                            console.log(e.get('target').properties.get('hintContent'));
+                        });
 
                         myMap.geoObjects
                             .add(myPoint);
+
 
                         myPointArr = [];
                     }
                 });
             }
         }
-
     }
 );

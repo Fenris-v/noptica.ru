@@ -306,7 +306,6 @@ input[type=email] {
   line-height: 1;
 }
 .header_right {
-  width: 10%;
   text-align: center;
 }
 .header_right img {
@@ -1097,6 +1096,17 @@ form {
 .s_firstSlider .fullHD__bg {
   background: url("../images/main/first-screen-bg.jpg") center no-repeat;
   background-size: cover;
+  position: relative;
+}
+.s_firstSlider .fullHD__bg .header_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .slick-list {
