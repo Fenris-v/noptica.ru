@@ -3,6 +3,9 @@
 /* RESET */
 @import "min-reset"
 
+.mobileHeader__container
+  display: none
+
 .header
   position: relative
   overflow: hidden
@@ -49,8 +52,6 @@
         @include transition(none)
         border-bottom: 1px solid #000
         text-decoration: none
-
-        .header__nav li
 
   &_bottom
     display: flex
@@ -873,6 +874,9 @@ form
 
 .innerTitle
   @include font($black, $gothamLight, 300, 40px)
+
+.firstSlider_top_bottom
+  display: none
 
 .s_popular
   margin-bottom: 50px

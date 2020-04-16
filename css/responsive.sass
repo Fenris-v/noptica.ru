@@ -13,13 +13,33 @@
     right: 0
 
 @media only screen and (max-width: 1250px)
+  .s_firstSlider .fullHD__bg
+    background: url("../images/main/mobile-bg.jpg") no-repeat
+    background-size: cover
+
+  .firstSlider
+    height: 400px
+
   .firstSlider_top
-    max-width: 70%
+    display: none
 
   .firstSlider__slide__img
-    max-width: 50%
-    top: 50%
+    top: 65%
     +transform(translateY(-50%))
+    max-height: 400px
+
+  .firstSlider_bottom
+    padding: 50px
+
+    p
+      color: $textBlack
+
+  .firstSlider_top_bottom
+    display: block
+
+    .firstSlider_top
+      display: flex
+      width: 100%
 
   .linkStore__item__img
     right: 0
@@ -78,23 +98,8 @@
   .questions
     padding: 90px 0
 
-  .firstSlider__slide__img
-    max-height: 300px
-    top: 73%
-
   .firstSlider_top
-    //max-width: 100%
-    //width: 100%
     display: none
-
-  .firstSlider_bottom
-    text-align: center
-    padding-top: 50px
-
-  .slick-slide img
-    position: static
-    margin: 0 auto
-    @include transform(translateY(22px))
 
   .footer
 
@@ -136,11 +141,46 @@
       margin-bottom: 20px
 
 @media only screen and (max-width: 1000px)
+  .header
+    overflow: visible
+
+  .mobileHeader
+    &__container
+      display: block
+
+    &__list
+      display: flex
+      justify-content: space-between
+
+      li
+        border: 1px solid $greyBg
+        display: flex
+        justify-content: center
+        align-items: center
+
+
+        a
+          width: 100px
+          height: 70px
+          display: flex
+          justify-content: center
+          align-items: center
+
+          img
+            width: 25px
+
+
   .header_top
     display: none
 
   .header_left
     width: 100%
+
+  .header__social
+    display: none
+
+  .header__time
+    display: none
 
   .catalog__container__side
     width: 30%
@@ -156,6 +196,13 @@
 
   .header_bottom
     flex-wrap: wrap
+    text-align: center
+
+    .logo
+      margin: 0 auto
+
+    .btn.btn_red
+      display: none
 
   .logo
     margin: 0 auto 20px
@@ -168,6 +215,10 @@
 
   .header_bottom .btn_red
     max-width: 300px
+
+  .firstSlider__slide__img
+    max-height: 300px
+    top: 77%
 
   .popular__title
     flex-wrap: wrap
@@ -229,9 +280,6 @@
     .fullHD
       padding-bottom: 0
 
-  .s_firstSlider .fullHD__bg
-    background: none
-
   .firstSlider_top
     flex-wrap: wrap
     margin-bottom: 0
@@ -239,12 +287,6 @@
   .firstSlider__item
     width: 100%
     margin-bottom: 20px
-
-  .firstSlider__slide
-    background: $blueBg
-
-  .firstSlider__slide__img
-    display: none !important
 
   .firstSlider_bottom p
     font-size: 22px
@@ -361,8 +403,38 @@
     justify-content: center
 
 @media only screen and (max-width: 640px)
+  .mobileHeader__list li a
+    width: 50px
+
+  .firstSlider__slide
+    overflow: hidden
+
+  .firstSlider__slide__img
+    right: -45%
+    top: 60%
+
+  .header__hamburger
+    padding: 0 !important
+
   .header__time, .header_bottom .btn_red
     display: none
+
+  .firstSlider_bottom
+    padding-left: 0
+
+  .linkStore__item
+    padding: 20px
+
+  .linkStore__item:last-child .linkStore__item__title a
+    position: relative
+    z-index: 2
+
+  .linkStore__item__title a
+    font-size: 16px
+    line-height: 1.3
+
+  .linkStore__item:first-child
+    background-size: contain
 
   .social
     justify-content: center

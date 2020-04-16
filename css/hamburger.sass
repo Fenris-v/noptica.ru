@@ -24,7 +24,7 @@
 
 .menu-toggle-line
   position: absolute
-  background: red
+  background: $red
   display: block
   margin: auto
   height: 4px
@@ -64,7 +64,7 @@
   -moz-transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -moz-transform 0.2s ease 0s
 
 .adaptive-menu-toggle--open .menu-toggle-line
-  background: red
+  background: $red
 
 .adaptive-menu-toggle--open .menu-toggle-line--1
   width: 0
@@ -97,12 +97,20 @@
 @media only screen and (max-width: 1000px)
   .header__hamburger
     display: block !important
-    position: absolute
-    right: 10px
-    top: 20px
+    padding: 0 25px
+
+    .adaptive-menu-toggle
+      height: 30px
+      width: 50px
+      padding: 0
+
+  .headerNav_adaptive__wrapper
+    background: $greyBg
+
+  .headerNav__items_adaptive
+    padding: 30px
 
   .headerNav_adaptive
-    background: red
     display: none
     padding-top: 60px
     position: absolute
@@ -117,10 +125,8 @@
     margin-left: -15px
 
   .headerNav__items_adaptive a
-    background: red
-    border: $textBlack 1px solid
-    border-bottom: none
-    color: red
+    border-bottom: $textBlack 1px solid
+    color: $textBlack
     display: block
     font-family: "Museo Sans Cyrl -300", sans-serif
     font-size: 17px
@@ -129,3 +135,18 @@
 
   .headerNav__items_adaptive li:last-child a
     border-bottom: $textBlack 1px solid
+
+  .headerNav_adaptive__wrapper
+    .header__social
+      display: flex
+      justify-content: center
+      margin-bottom: 20px
+
+      li:last-child
+        margin-right: 0
+
+    .header__time
+      display: block
+      width: 100%
+      text-align: center
+      padding-bottom: 30px
