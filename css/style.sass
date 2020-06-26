@@ -1430,6 +1430,292 @@ form
       border: none
       padding: 0 50px
 
+/* ABOUT */
+.s_breadcrumbs_grey
+  background: #f9f9f9
+
+  .breadcrumbs
+    border-bottom: none
+
+  .breadcrumbs__container
+    margin-bottom: 30px
+
+.breadcrumbs__h1
+  padding-top: 25px
+  @include font($textBlack, $regular, normal, 40px)
+
+.aboutCompanyTitle
+  max-width: 350px
+  @include font($textBlack, $bold, bold, 36px, 40px)
+  padding-top: 70px
+  margin-bottom: 50px
+
+.aboutCompany_fullHD
+  background: url("../images/about/man.jpg") center top
+  background-size: cover
+
+.aboutCompany
+  p
+    @include font($textBlack, $regular, normal, 16px, 24px)
+    max-width: 450px
+    margin-bottom: 30px
+
+  &__list
+    padding-top: 70px
+    display: flex
+    margin-bottom: 60px
+
+    li
+      margin-right: 100px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      img
+        height: 80px
+        margin-bottom: 30px
+
+      p
+        @include font($textBlack, $bold, bold, 22px, 26px)
+        margin-bottom: 20px
+
+      a
+        @include font($blueText, $regular, normal, 15px)
+        text-decoration: underline
+
+        &:hover
+          text-decoration: none
+
+.blueBg
+  background: $blueBg
+
+.diagnostic
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding-top: 100px
+
+  &__links
+    display: flex
+    justify-content: space-between
+    width: 65%
+
+    li
+      width: 49%
+
+      &:nth-child(odd) p
+        top: 40px
+
+      &:nth-child(even) p
+        bottom: 40px
+
+    a
+      position: relative
+      width: 100%
+      display: block
+
+      &:hover
+        @include transform(scale(1.05))
+
+        p
+          text-decoration: none
+
+      img
+        @include border-radius(10px)
+        width: 100%
+        height: 100%
+        min-height: 310px
+        @include object-fit(cover)
+
+      p
+        left: 40px
+        position: absolute
+        @include font($blueText, $bold, bold, 35px, 38px)
+        text-decoration: underline
+
+  &__text
+    width: 30%
+
+    &__title
+      @include font($white, $bold, bold, 36px, 40px)
+      margin-bottom: 40px
+
+    p
+      margin-bottom: 30px
+      @include font($white, $regular, normal, 16px, 24px)
+
+      span
+        font-family: $bold
+        font-weight: bold
+
+.team
+  padding-top: 80px
+
+  .innerTitle
+    margin-bottom: 60px
+    @include font($textBlack, $bold, bold, 36px, 40px)
+
+  > p
+    max-width: 660px
+    margin-bottom: 90px
+    @include font($textBlack, $regular, normal, 16px, 24px)
+
+  &__list
+    margin-bottom: 80px
+    position: relative
+
+  &__item
+    margin: 0 10px
+    &__name
+      @include font($blueText, $bold, bold, 24px, 30px)
+      padding-top: 40px
+
+    p
+      @include font($textBlack, $regular, normal, 16px, 30px)
+
+  .slick-list
+    overflow: hidden
+    margin: 0 -10px
+
+  .slick-arrow
+    position: absolute
+    top: 35%
+    font-size: 0
+    margin: auto
+    border: none
+    width: 57px
+    height: 57px
+    cursor: pointer
+    color: transparent
+    background: none
+    z-index: 1
+    @include transition()
+
+    &:hover
+      @include transition()
+      @include transform(scale(1.3))
+
+  .slick-next
+    right: -60px
+    background: url("../images/icons/right-arrow.svg")
+
+  .slick-prev
+    left: -60px
+    background: url("../images/icons/left-arrow.svg")
+
+.s_license
+  background: $greyBg
+
+.license
+  .innerTitle
+    @include font($textBlack, $bold, bold, 36px, 40px)
+    margin-bottom: 60px
+    padding-top: 80px
+
+  > p
+    @include font($textBlack, $regular, normal, 16px, 24px)
+    max-width: 660px
+    margin-bottom: 80px
+
+  &__list
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+
+    li
+      width: 32%
+      background: $white
+      display: flex
+      padding: 40px
+      @include border-radius(10px)
+      @include transition()
+
+      &:hover
+        @include transition()
+        @include transform(scale(1.05))
+
+      img
+        width: 150px
+        margin-right: 40px
+
+    &__number
+      @include font($grey, $gothamBold, bold, 60px)
+      margin-bottom: 25px
+
+    &__content
+      p
+        @include font($textBlack, $bold, bold, 18px, 26px)
+        margin-bottom: 20px
+
+      a
+        @include font($blueText, $regular, normal, 13px)
+        text-transform: uppercase
+        text-decoration: none
+
+        &:hover
+          text-decoration: underline
+
+.principe
+  padding-top: 80px
+  display: flex
+  justify-content: space-between
+  margin-bottom: 80px
+
+  &_left
+    width: 65%
+
+  &__title
+    @include font($textBlack, $bold, bold, 36px)
+    margin-bottom: 80px
+
+    span
+      font-family: $regular
+      font-weight: normal
+
+  &__list
+
+    li
+      align-items: flex-start
+      display: flex
+      margin-bottom: 80px
+
+      &:last-child
+        margin-bottom: 0
+
+      img
+        width: 60px
+        margin-right: 40px
+        padding-top: 5px
+
+    &__content
+      p
+        @include font($textBlack, $regular, normal, 18px, 26px)
+
+      .principe__list__content__bold
+        margin-bottom: 20px
+        @include font($textBlack, $bold, bold, 18px, 26px)
+
+  &_right
+    padding: 40px
+    width: 30%
+    background: $blueBg
+    @include border-radius(10px)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    img
+      width: 110px
+      margin-bottom: 25px
+
+    &__title
+      text-align: center
+      margin-bottom: 35px
+      @include font($white, $bold, bold, 24px, 26px)
+
+    p
+      text-align: center
+      @include font($white, $regular, normal, 16px, 26px)
 
 
 /* RESPONSIVE */
