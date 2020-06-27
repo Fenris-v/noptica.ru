@@ -3054,39 +3054,222 @@ form {
     padding-top: 0;
   }
 }
+@media only screen and (max-width: 1500px) {
+  .team .slick-next {
+    right: 0;
+  }
+  .team .slick-prev {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .diagnostic__links a p {
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .license__list li {
+    flex-direction: column;
+    align-items: center;
+  }
+  .license__list li img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .license__list__content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .aboutCompany__list {
+    flex-wrap: wrap;
+  }
+  .aboutCompany__list li {
+    width: 50%;
+    margin-right: 0;
+  }
+  .aboutCompany__list li:first-child, .aboutCompany__list li:nth-child(2) {
+    margin-bottom: 40px;
+  }
+  .aboutCompany__list li p {
+    max-width: 180px;
+  }
+
+  .diagnostic {
+    flex-wrap: wrap;
+  }
+  .diagnostic__links {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .diagnostic__text {
+    width: 100%;
+  }
+
+  .principe {
+    flex-wrap: wrap;
+  }
+  .principe_left {
+    width: 100%;
+  }
+  .principe__list {
+    margin-bottom: 40px;
+  }
+  .principe__list li {
+    margin-bottom: 40px;
+  }
+  .principe_right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .aboutCompany_fullHD {
+    background: #f9f9f9;
+  }
+
+  .breadcrumbs__h1 {
+    font-size: 25px;
+  }
+
+  .aboutCompanyTitle.innerTitle {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 27px;
+    max-width: 100%;
+  }
+
+  .aboutCompany p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutCompany__list {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .aboutCompany__list li p {
+    font-size: 18px;
+  }
+
+  .diagnostic {
+    padding-top: 40px;
+  }
+  .diagnostic__links {
+    margin-bottom: 30px;
+  }
+  .diagnostic__links a p {
+    font-size: 20px;
+  }
+  .diagnostic__text__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .diagnostic__text p {
+    margin-bottom: 20px;
+  }
+
+  .team {
+    padding-top: 40px;
+  }
+  .team .innerTitle {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .team p {
+    margin-bottom: 40px;
+  }
+  .team__list {
+    margin-bottom: 20px;
+  }
+
+  .license .innerTitle {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .license p {
+    margin-bottom: 40px;
+  }
+  .license__list {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .license__list li {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .license__list li:hover {
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .license__list li img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .license__list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .principe {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .principe__title {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .aboutCompany__list li {
+    width: 100%;
+    align-items: center;
+  }
+  .aboutCompany__list li img {
+    margin-bottom: 10px;
+  }
+  .aboutCompany__list li p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .diagnostic__links {
+    flex-direction: column;
+  }
+  .diagnostic__links li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .license__list li {
+    flex-direction: column;
+  }
+  .license__list li img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .license__list__number {
+    margin-bottom: 15px;
+  }
+  .license__list__content p {
+    margin-bottom: 20px;
+  }
+
+  .principe__list li {
+    flex-direction: column;
+  }
+  .principe__list li img {
+    margin: 0 auto 20px;
+  }
+}
 /* HAMBURGER */
-@font-face {
-  font-family: roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: robotoBold;
-  src: url(../fonts/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: robotoItalic;
-  src: url(../fonts/Roboto-Italic.ttf);
-}
-@font-face {
-  font-family: Gotham;
-  src: url("../fonts/GothamPro.eot") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
-  font-weight: normal;
-}
-@font-face {
-  font-family: GothamBold;
-  src: url("../fonts/GothamPro-Bold.eot") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: GothamMedium;
-  src: url("../fonts/GothamPro-Medium.eot") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: GothamLight;
-  src: url("../fonts/GothamPro-Light.eot") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype");
-  font-weight: 300;
-}
 @font-face {
   font-family: roboto;
   src: url(../fonts/Roboto-Regular.ttf);

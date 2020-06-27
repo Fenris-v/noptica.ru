@@ -1,0 +1,201 @@
+@media only screen and (max-width: 1500px)
+  .team
+    .slick-next
+      right: 0
+
+    .slick-prev
+      left: 0
+
+@media only screen and (max-width: 1200px)
+  .diagnostic__links a p
+    font-size: 25px
+    line-height: 38px
+
+  .license__list
+    li
+      flex-direction: column
+      align-items: center
+
+      img
+        margin-right: 0
+        margin-bottom: 20px
+
+    &__content
+      text-align: center
+
+@media only screen and (max-width: 1000px)
+  .aboutCompany__list
+    flex-wrap: wrap
+
+    li
+      width: 50%
+      margin-right: 0
+
+      &:first-child, &:nth-child(2)
+        margin-bottom: 40px
+
+      p
+        max-width: 180px
+
+  .diagnostic
+    flex-wrap: wrap
+
+    &__links
+      width: 100%
+      margin-bottom: 60px
+
+    &__text
+      width: 100%
+
+  .principe
+    flex-wrap: wrap
+
+    &_left
+      width: 100%
+
+    &__list
+      margin-bottom: 40px
+
+      li
+        margin-bottom: 40px
+
+    &_right
+      width: 100%
+
+@media only screen and (max-width: 767px)
+  .aboutCompany_fullHD
+    background: $greyBg
+
+  .breadcrumbs__h1
+    font-size: 25px
+
+  .aboutCompanyTitle.innerTitle
+    padding-top: 10px
+    margin-bottom: 20px
+    font-size: 25px
+    line-height: 27px
+    max-width: 100%
+
+  .aboutCompany
+    p
+      max-width: 100%
+      margin-bottom: 20px
+
+    &__list
+      padding-top: 30px
+      margin-bottom: 30px
+
+      li p
+        font-size: 18px
+
+  .diagnostic
+    padding-top: 40px
+
+    &__links
+      margin-bottom: 30px
+
+      a p
+        font-size: 20px
+
+    &__text
+      &__title
+        font-size: 25px
+        margin-bottom: 20px
+
+      p
+        margin-bottom: 20px
+
+  .team
+    padding-top: 40px
+
+    .innerTitle
+      margin-bottom: 20px
+      font-size: 25px
+
+    p
+      margin-bottom: 40px
+
+    &__list
+      margin-bottom: 20px
+
+  .license
+    .innerTitle
+      padding-top: 40px
+      margin-bottom: 20px
+      font-size: 25px
+
+    p
+      margin-bottom: 40px
+
+    &__list
+      flex-direction: column
+      margin-bottom: 20px
+
+      li
+        width: 100%
+        flex-direction: row
+        margin-bottom: 20px
+        padding: 20px
+
+        &:hover
+          @include transform(none)
+
+        img
+          margin-right: 20px
+          margin-bottom: 0
+
+      &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0 auto
+
+  .principe
+    padding-top: 40px
+    margin-bottom: 40px
+
+    &__title
+      font-size: 25px
+      margin-bottom: 40px
+
+@media only screen and (max-width: 640px)
+  .aboutCompany__list
+    li
+      width: 100%
+      align-items: center
+
+      img
+        margin-bottom: 10px
+
+      p
+        max-width: 100%
+        text-align: center
+
+  .diagnostic
+    &__links
+      flex-direction: column
+
+      li
+        width: 100%
+        margin-bottom: 20px
+
+  .license
+    &__list
+      li
+        flex-direction: column
+
+        img
+          margin-right: 0
+          margin-bottom: 20px
+
+      &__number
+        margin-bottom: 15px
+
+      &__content p
+        margin-bottom: 20px
+
+  .principe__list li
+    flex-direction: column
+
+    img
+      margin: 0 auto 20px
