@@ -1,10 +1,25 @@
 @media only screen and (max-width: 1500px)
   .team
+    &__list
+      margin-bottom: 120px
+
     .slick-next
       right: 0
 
     .slick-prev
       left: 0
+
+    .slick-dots
+      bottom: -60px
+
+      li:last-child
+        margin-right: 0
+
+      button
+        background: $blueBg
+
+      .slick-active button
+        background: $red
 
 @media only screen and (max-width: 1200px)
   .diagnostic__links a p
@@ -116,7 +131,10 @@
       margin-bottom: 40px
 
     &__list
-      margin-bottom: 20px
+      margin-bottom: 60px
+
+      .slick-dots
+        bottom: -20px
 
   .license
     .innerTitle
@@ -199,3 +217,7 @@
 
     img
       margin: 0 auto 20px
+
+  .team
+    .slick-dots li
+      margin-right: 10px

@@ -141,24 +141,41 @@ $(document).ready(() => {
         arrows: true,
         dots: false,
         slidesToShow: 4,
+        slidesToScroll: 4,
         autoplay: false,
         responsive: [
             {
+                breakpoint: 1500,
+                settings: {
+                    arrows: false,
+                    dots:  true
+                }
+            },
+            {
                 breakpoint: 1000,
                 settings: {
+                    slidesToScroll: 3,
                     slidesToShow: 3,
+                    arrows: false,
+                    dots:  true
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false,
+                    dots:  true
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
+                    slidesToScroll: 1,
                     slidesToShow: 1,
+                    arrows: false,
+                    dots:  true
                 }
             }
         ]

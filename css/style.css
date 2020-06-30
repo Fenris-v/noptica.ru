@@ -3055,11 +3055,26 @@ form {
   }
 }
 @media only screen and (max-width: 1500px) {
+  .team__list {
+    margin-bottom: 120px;
+  }
   .team .slick-next {
     right: 0;
   }
   .team .slick-prev {
     left: 0;
+  }
+  .team .slick-dots {
+    bottom: -60px;
+  }
+  .team .slick-dots li:last-child {
+    margin-right: 0;
+  }
+  .team .slick-dots button {
+    background: #5584c4;
+  }
+  .team .slick-dots .slick-active button {
+    background: #e30613;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -3179,7 +3194,10 @@ form {
     margin-bottom: 40px;
   }
   .team__list {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+  }
+  .team__list .slick-dots {
+    bottom: -20px;
   }
 
   .license .innerTitle {
@@ -3267,6 +3285,10 @@ form {
   }
   .principe__list li img {
     margin: 0 auto 20px;
+  }
+
+  .team .slick-dots li {
+    margin-right: 10px;
   }
 }
 /* HAMBURGER */
